@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HB0-S5-9I0" customClass="PieChartView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="265"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="263-E8-KJB" customClass="quxian">
+                                <rect key="frame" x="20" y="335" width="347" height="181"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="263-E8-KJB" firstAttribute="top" secondItem="HB0-S5-9I0" secondAttribute="bottom" constant="50" id="FLN-j9-Frb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HB0-S5-9I0" secondAttribute="trailing" constant="39" id="cGS-od-xOX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="263-E8-KJB" secondAttribute="trailing" constant="-8" id="drD-KQ-9rb"/>
+                            <constraint firstAttribute="bottom" secondItem="HB0-S5-9I0" secondAttribute="bottom" constant="382" id="lCx-Oc-04t"/>
+                            <constraint firstItem="HB0-S5-9I0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mHx-cu-1xv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="263-E8-KJB" secondAttribute="bottom" constant="151" id="stU-oN-EwL"/>
+                            <constraint firstItem="HB0-S5-9I0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="wY9-sR-FGB"/>
+                            <constraint firstItem="263-E8-KJB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="xfy-Qn-XIw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238.5" y="183.5"/>
+        </scene>
+    </scenes>
+</document>
